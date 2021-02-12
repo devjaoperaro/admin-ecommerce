@@ -1,0 +1,124 @@
+$primary-color: #00435f;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    // background-image: url("../../procam-imagem.png");
+    background: #f9fafa;
+    height: 100vh;
+
+    .form-control {
+        width: 540px;
+        max-width: 100%;
+        height: 420px;
+        top: 50%;
+        left: 50%;
+        padding: 50px 60px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+        background-color: rgb(0, 0, 0);
+        opacity: 0.8;
+        border-radius: 12px;
+
+        h1 {
+            margin: 0;
+            padding: 0 0 35px;
+            text-align: center;
+            font-size: 34px;
+            font-weight: bold;
+            color: white;
+        }
+
+        h4 {
+            margin-bottom: 21px;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 0.225px;
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            border-radius: 8px;
+            outline: 0px;
+            border: 2px solid rgb(255, 255, 255);
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: 20px;
+            letter-spacing: 0.295px;
+            transition: border 0.2s;
+
+            &:focus {
+                border-color: $primary-color;
+            }
+        }
+
+        input[type="email"] {
+            position: relative;
+        }
+
+        #email-icon {
+            position: absolute;
+            margin-left: -76%;
+            margin-top: 10px;
+        }
+
+        input[type="password"] {
+            position: relative;
+        }
+
+        #password-icon {
+            position: absolute;
+            margin-left: -76%;
+            margin-top: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 20px 12px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .btn-login {
+            border: none;
+            outline: none;
+            height: 40px;
+            width: 100%;
+            background-color: $primary-color;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            margin-top: 12px;
+            transition: filter 0.2s;
+
+            &:hover {
+                filter: brightness(70%);
+            }
+        }
+
+        a.btn-reset {
+            font-size: 14px;
+            display: block;
+            color: #808080;
+            text-transform: none;
+            margin: 0px 129px;
+            text-align: center;
+            transition: color 0.2s;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+    }
+}
